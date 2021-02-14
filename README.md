@@ -1,5 +1,5 @@
 # Aliyda : Context & Basis
-[Alyda](https://aliyda.osive.com/)
+[Aliyda](https://aliyda.osive.com/)
 
 Core systems, which form the foundations of all societies, are broken. We cannot mend them by just being one-dimensional in our approach.
 
