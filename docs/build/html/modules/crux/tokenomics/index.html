@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokenomics &#8212; Greens Project  documentation</title>
+    
+  <link rel="stylesheet" href="../../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Utility Token" href="../erc20/index.html" />
+    <link rel="prev" title="Oracle" href="../oracle/index.html" />
+
+<!-- VUE -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Vuetify -->
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script>
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../../index.html">
+    
+      <p class="title">Greens Project</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../theBasis/index.html">The Basis</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../introduction/index.html">The Problem Statement & Solution</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">The Crux</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../end/index.html">The End</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../appexdix/index.html">Appendix</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../references/index.html">Links & References</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../team/index.html">Team Profile</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+          
+            
+                <li class="">
+                    <a href="../Escrow/index.html">Escrow</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../ipfs/index.html">IPFS</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../oracle/index.html">Oracle</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">Tokenomics</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../erc20/index.html">Utility Green Token ERC20</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../ui/index.html">UI-Screenflow</a>
+                </li>
+            
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#do-we-need-ico" class="nav-link">Do we need ICO?</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#token-buy-back" class="nav-link">Token Buy Back</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#token-distribution" class="nav-link">Token Distribution</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#volatility" class="nav-link">Volatility</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="tokenomics">
+<h1>Tokenomics<a class="headerlink" href="#tokenomics" title="Permalink to this headline">¶</a></h1>
+<img alt="../../../_images/blankspace7.png" class="align-center" src="../../../_images/blankspace7.png" />
+<div class="section" id="do-we-need-ico">
+<h2>Do we need ICO?<a class="headerlink" href="#do-we-need-ico" title="Permalink to this headline">¶</a></h2>
+<p>We don’t require an ICO.ICO are too much frowned upon as there have been many cons related with them.
+We choose primary to not open this kind of worms , and as demonstrated in Cardano initiative , ICO fail to provide long term recurring sustenance for the ecosystem.</p>
+<img alt="../../../_images/ico.png" class="align-center" src="../../../_images/ico.png" />
+<p>Fundraising for creation of platform , demo-site and marketing
+Essential Decision : kind of tokens for the platform.</p>
+<p>Company’s own   Coin token is waste of effort and deviates from primary focus of the platform therefore, we intend to ride on other cryptocurrencies of the world like Bitcoin , ethereum , etc.
+Our bias is towards using multiple blockchains , each decision driven  by the sheer suitability.
+There will be security token for investments , governance token for voting on the direction of the platform and other decisions; utility tokens for day to day micro-transcations in the ecosystems.</p>
+<ul class="simple">
+<li><p>1 utility token for energy will be 1 W</p></li>
+<li><p>for microgreens and mushrooms will be 100g of produce</p></li>
+<li><p>for render farms would be 1 hour of usage</p></li>
+</ul>
+<p>Utility token related Smart contracts in blockchain will enable participants to conduct transactions on the platform without the need for
+trust between the counterparties. Tokenization and smart contracts will also eliminate credit risk between counterparties</p>
+<p>Next step  is to decide and practical path to making this platform a reality , to to decide seed funding &amp; time required for minimal viable product and then to launch a final battle hardened platform</p>
+<p>Then one would like to seek  the funds required for First Demo site .
+Next , in pipeline we can imagine Marketing funds .</p>
+<p>Somewhere in there one would be performing Analysis of Risks ,  volatility and selection of relevant team members .</p>
+<p>All unsold Aliyda Utility Tokens will be burned, Aliyda token is burnable
+and non-mintable. That imply that Aliyda can decide to reduce the amount of
+token created by burning an agreed number. The token is non-mintable means
+the token is only created at one time. No more token will ever be created again.</p>
+<table class="table">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Token Name</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Token Symbol</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Platform</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Type</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Total Supply</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Token Price</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Token to be sold</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Soft Cap</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Hard cap</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>New Hard cap</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="token-buy-back">
+<h2>Token Buy Back<a class="headerlink" href="#token-buy-back" title="Permalink to this headline">¶</a></h2>
+<p>Aliyda may set out 20% of the profit made to buy back tokens from holders
+till the circulating supply becomes 300 million. This would be done quarterly.
+The concept of buying back and burning will add to the value of the token.</p>
+</div>
+<div class="section" id="token-distribution">
+<h2>Token Distribution<a class="headerlink" href="#token-distribution" title="Permalink to this headline">¶</a></h2>
+<table class="table">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>For ICO Sale</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Advisory Service</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Marketing Spend</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Bonus</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Bounty</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Airdrop</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Partnerships</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Reserve</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Founding Team</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<img alt="../../../_images/pieChart1.png" class="align-center" src="../../../_images/pieChart1.png" />
+<p><strong>USE OF PROCEEDS</strong></p>
+<p>The funds raised from the token sale will be used to fulfill the development
+milestone.</p>
+<table class="table">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Development</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Operation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Licensing</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Marketing</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Reserve Capital</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<img alt="../../../_images/pieChart2.png" class="align-center" src="../../../_images/pieChart2.png" />
+</div>
+<div class="section" id="volatility">
+<h2>Volatility<a class="headerlink" href="#volatility" title="Permalink to this headline">¶</a></h2>
+<p>Aliyda team will work overtime to ensure that the Aliyda utility tokens maintains better
+stability and are protected against unhealthy fluctuations. This would be done by:</p>
+<ul class="simple">
+<li><p>Sharing realistic, transparent and credible project document and information
+for fair valuation,</p></li>
+<li><p>Attempting to reduce differences between exchanges,</p></li>
+<li><p>Working continuously against unhealthy rumours and unwanted information
+spreading,</p></li>
+<li><p>Investors and buyers will be encouraged to stay invested and look for long-
+term growth opportunity and greater return.</p></li>
+</ul>
+<p>The above will also facilitate to gain long-term success for Aliyda utility token.</p>
+<p>References -</p>
+<p><a class="reference external" href="https://www.solarex.io/assets/files/Solarex_Whitepaper_V1.pdf">https://www.solarex.io/assets/files/Solarex_Whitepaper_V1.pdf</a> (Section 8.0)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The tables are hypothetical placed them here as placeholders</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../oracle/index.html" title="previous page">Oracle</a>
+    <a class='right-next' id="next-link" href="../erc20/index.html" title="next page">Utility Token</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Team Osive.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.0+.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

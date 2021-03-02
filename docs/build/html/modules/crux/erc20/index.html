@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utility Token &#8212; Greens Project  documentation</title>
+    
+  <link rel="stylesheet" href="../../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="UI-Screenflow" href="../ui/index.html" />
+    <link rel="prev" title="Tokenomics" href="../tokenomics/index.html" />
+
+<!-- VUE -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Vuetify -->
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script>
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../../index.html">
+    
+      <p class="title">Greens Project</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../theBasis/index.html">The Basis</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../introduction/index.html">The Problem Statement & Solution</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">The Crux</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../end/index.html">The End</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../appexdix/index.html">Appendix</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../references/index.html">Links & References</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../team/index.html">Team Profile</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+          
+            
+                <li class="">
+                    <a href="../Escrow/index.html">Escrow</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../ipfs/index.html">IPFS</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../oracle/index.html">Oracle</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../tokenomics/index.html">Tokenomics</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">Utility Green Token ERC20</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../ui/index.html">UI-Screenflow</a>
+                </li>
+            
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#standarderc20-token-implementation" class="nav-link">StandardERC20 Token implementation</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#utility-token-implementation" class="nav-link">Utility Token implementation</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="utility-token">
+<h1>Utility Token<a class="headerlink" href="#utility-token" title="Permalink to this headline">¶</a></h1>
+<p><strong>1 utility token for energy will be 1 W</strong></p>
+<div class="section" id="standarderc20-token-implementation">
+<h2>StandardERC20 Token implementation<a class="headerlink" href="#standarderc20-token-implementation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="o">//</span> <span class="n">SPDX</span><span class="o">-</span><span class="n">License</span><span class="o">-</span><span class="n">Identifier</span><span class="p">:</span> <span class="n">MIT</span>
+
+   <span class="n">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.8</span><span class="o">.</span><span class="mi">0</span><span class="p">;</span>
+
+   <span class="kn">import</span> <span class="s2">&quot;https://github.com/OpenZeppelin/openzeppelin-contracts/blob/24a0bc23cfe3fbc76f8f2510b78af1e948ae6651/contracts/token/ERC20/IERC20.sol&quot;</span><span class="p">;</span>
+
+   <span class="n">contract</span> <span class="n">StandardERC20</span> <span class="ow">is</span> <span class="n">IERC20</span> <span class="p">{</span>
+   <span class="o">//</span> <span class="n">state</span> <span class="n">variables</span>
+   <span class="n">mapping</span> <span class="p">(</span><span class="n">address</span> <span class="o">=&gt;</span> <span class="n">uint256</span><span class="p">)</span> <span class="n">private</span> <span class="n">_balances</span><span class="p">;</span>
+
+   <span class="n">mapping</span> <span class="p">(</span><span class="n">address</span> <span class="o">=&gt;</span> <span class="n">mapping</span> <span class="p">(</span><span class="n">address</span> <span class="o">=&gt;</span> <span class="n">uint256</span><span class="p">))</span> <span class="n">private</span> <span class="n">_allowances</span><span class="p">;</span>
+
+   <span class="n">uint256</span> <span class="n">private</span> <span class="n">_totalSupply</span><span class="p">;</span>
+
+   <span class="n">string</span> <span class="n">private</span> <span class="n">_name</span><span class="p">;</span>
+   <span class="n">string</span> <span class="n">private</span> <span class="n">_symbol</span><span class="p">;</span>
+   <span class="n">uint8</span> <span class="n">private</span> <span class="n">_decimals</span><span class="p">;</span>
+
+   <span class="n">constructor</span> <span class="p">(</span><span class="n">string</span> <span class="n">memory</span> <span class="n">_name_</span><span class="p">,</span> <span class="n">string</span> <span class="n">memory</span> <span class="n">_symbol_</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">_totalSupply_</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_name</span> <span class="o">=</span> <span class="n">_name_</span><span class="p">;</span>
+       <span class="n">_symbol</span> <span class="o">=</span> <span class="n">_symbol_</span><span class="p">;</span>
+       <span class="n">_decimals</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+       <span class="n">_totalSupply</span> <span class="o">=</span> <span class="n">_totalSupply_</span><span class="p">;</span>
+       <span class="n">_balances</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">]</span> <span class="o">=</span> <span class="n">_balances</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">]</span> <span class="o">+</span> <span class="n">_totalSupply_</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">name</span><span class="p">()</span> <span class="n">public</span> <span class="n">view</span> <span class="n">returns</span> <span class="p">(</span><span class="n">string</span> <span class="n">memory</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">_name</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">symbol</span><span class="p">()</span> <span class="n">public</span> <span class="n">view</span>  <span class="n">returns</span> <span class="p">(</span><span class="n">string</span> <span class="n">memory</span><span class="p">){</span>
+       <span class="k">return</span> <span class="n">_symbol</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">decimals</span><span class="p">()</span> <span class="n">public</span> <span class="n">view</span> <span class="n">returns</span><span class="p">(</span><span class="n">uint8</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">_decimals</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">totalSupply</span><span class="p">()</span> <span class="n">public</span> <span class="n">view</span> <span class="n">override</span> <span class="n">returns</span> <span class="p">(</span><span class="n">uint256</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">_totalSupply</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">balanceOf</span><span class="p">(</span><span class="n">address</span> <span class="n">account</span><span class="p">)</span> <span class="n">public</span> <span class="n">view</span> <span class="n">override</span> <span class="n">returns</span> <span class="p">(</span><span class="n">uint256</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">_balances</span><span class="p">[</span><span class="n">account</span><span class="p">];</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">transfer</span><span class="p">(</span><span class="n">address</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">)</span> <span class="n">public</span> <span class="n">override</span> <span class="n">returns</span> <span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_transfer</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span><span class="n">amount</span> <span class="p">);</span>
+       <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">approve</span><span class="p">(</span><span class="n">address</span> <span class="n">spender</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">)</span> <span class="n">public</span> <span class="n">override</span> <span class="n">returns</span> <span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_approve</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">spender</span><span class="p">,</span> <span class="n">amount</span><span class="p">);</span>
+       <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">allowance</span><span class="p">(</span><span class="n">address</span> <span class="n">owner</span><span class="p">,</span> <span class="n">address</span> <span class="n">spender</span><span class="p">)</span> <span class="n">public</span> <span class="n">override</span> <span class="n">view</span> <span class="n">returns</span><span class="p">(</span><span class="n">uint256</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">_allowances</span><span class="p">[</span><span class="n">owner</span><span class="p">][</span><span class="n">spender</span><span class="p">];</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">transferFrom</span><span class="p">(</span><span class="n">address</span> <span class="n">sender</span><span class="p">,</span> <span class="n">address</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">)</span> <span class="n">public</span> <span class="n">override</span> <span class="n">returns</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_transfer</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">amount</span><span class="p">);</span>
+       <span class="n">_approve</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">_allowances</span><span class="p">[</span><span class="n">sender</span><span class="p">][</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">]</span> <span class="o">-</span> <span class="n">amount</span><span class="p">);</span>
+       <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">_transfer</span><span class="p">(</span><span class="n">address</span> <span class="n">sender</span><span class="p">,</span> <span class="n">address</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">)</span> <span class="n">internal</span> <span class="p">{</span>
+       <span class="n">require</span><span class="p">(</span><span class="n">recipient</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s2">&quot;ERC20: transfer from zero transfer&quot;</span><span class="p">);</span>
+       <span class="n">require</span><span class="p">(</span><span class="n">sender</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s2">&quot;ERC20: transfer from zero transfer&quot;</span><span class="p">);</span>
+
+       <span class="n">require</span><span class="p">(</span><span class="n">_balances</span><span class="p">[</span><span class="n">sender</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">amount</span><span class="p">,</span> <span class="s2">&quot;ERC20: sender does not have enough amount&quot;</span><span class="p">);</span>
+
+       <span class="n">_balances</span><span class="p">[</span><span class="n">sender</span><span class="p">]</span> <span class="o">=</span> <span class="n">_balances</span><span class="p">[</span><span class="n">sender</span><span class="p">]</span> <span class="o">-</span> <span class="n">amount</span><span class="p">;</span>
+       <span class="n">_balances</span><span class="p">[</span><span class="n">recipient</span><span class="p">]</span> <span class="o">=</span> <span class="n">_balances</span><span class="p">[</span><span class="n">recipient</span><span class="p">]</span> <span class="o">+</span> <span class="n">amount</span><span class="p">;</span>
+       <span class="n">emit</span> <span class="n">Transfer</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">amount</span><span class="p">);</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">_approve</span><span class="p">(</span><span class="n">address</span> <span class="n">owner</span><span class="p">,</span> <span class="n">address</span> <span class="n">spender</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">)</span> <span class="n">internal</span> <span class="p">{</span>
+     <span class="n">require</span><span class="p">(</span><span class="n">spender</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s2">&quot;ERC20: transfer from zero transfer&quot;</span><span class="p">);</span>
+     <span class="n">require</span><span class="p">(</span><span class="n">owner</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s2">&quot;ERC20: transfer from zero transfer&quot;</span><span class="p">);</span>
+
+     <span class="n">require</span><span class="p">(</span><span class="n">_balances</span><span class="p">[</span><span class="n">owner</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">amount</span><span class="p">,</span> <span class="s2">&quot;ERC20: owner does not have enough amount&quot;</span><span class="p">);</span>
+     <span class="n">_allowances</span><span class="p">[</span><span class="n">owner</span><span class="p">][</span><span class="n">spender</span><span class="p">]</span> <span class="o">=</span> <span class="n">amount</span><span class="p">;</span>
+     <span class="n">emit</span> <span class="n">Approval</span><span class="p">(</span><span class="n">owner</span><span class="p">,</span> <span class="n">spender</span><span class="p">,</span> <span class="n">amount</span><span class="p">);</span>
+   <span class="p">}</span>
+
+
+   <span class="n">function</span> <span class="n">mint</span><span class="p">(</span><span class="n">address</span> <span class="n">_toAccount</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">_amount</span><span class="p">)</span> <span class="n">public</span> <span class="p">{</span>
+     <span class="n">require</span><span class="p">(</span><span class="n">_toAccount</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;ERC20: mint to the zero address&quot;</span><span class="p">);</span>
+
+     <span class="n">require</span><span class="p">(</span><span class="n">_totalSupply</span> <span class="o">+</span> <span class="n">_amount</span> <span class="o">&gt;=</span> <span class="n">_totalSupply</span><span class="p">,</span><span class="s2">&quot;overflow&quot;</span><span class="p">);</span>
+
+     <span class="n">require</span><span class="p">(</span><span class="n">_balances</span><span class="p">[</span><span class="n">_toAccount</span><span class="p">]</span> <span class="o">+</span> <span class="n">_amount</span> <span class="o">&gt;=</span> <span class="n">_balances</span><span class="p">[</span><span class="n">_toAccount</span><span class="p">],</span><span class="s2">&quot;overflow&quot;</span><span class="p">);</span>
+
+     <span class="n">_totalSupply</span> <span class="o">+=</span> <span class="n">_amount</span><span class="p">;</span>
+     <span class="n">_balances</span><span class="p">[</span><span class="n">_toAccount</span><span class="p">]</span> <span class="o">+=</span> <span class="n">_amount</span><span class="p">;</span>
+     <span class="n">emit</span> <span class="n">Transfer</span><span class="p">(</span><span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">_toAccount</span><span class="p">,</span> <span class="n">_amount</span><span class="p">);</span>
+   <span class="p">}</span>
+
+
+   <span class="n">function</span> <span class="n">burn</span><span class="p">(</span><span class="n">address</span> <span class="n">_fromAccount</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">_amount</span><span class="p">)</span> <span class="n">public</span> <span class="p">{</span>
+        <span class="n">require</span><span class="p">(</span><span class="n">_fromAccount</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;ERC20: mint to the zero address&quot;</span><span class="p">);</span>
+
+        <span class="n">require</span><span class="p">(</span><span class="n">_balances</span><span class="p">[</span><span class="n">_fromAccount</span><span class="p">]</span> <span class="o">-</span> <span class="n">_amount</span> <span class="o">&lt;=</span> <span class="n">_balances</span><span class="p">[</span><span class="n">_fromAccount</span><span class="p">],</span><span class="s2">&quot;underflow&quot;</span><span class="p">);</span>
+
+        <span class="n">require</span><span class="p">(</span><span class="n">_totalSupply</span> <span class="o">-</span> <span class="n">_amount</span> <span class="o">&lt;=</span> <span class="n">_totalSupply</span><span class="p">,</span><span class="s2">&quot;underflow&quot;</span><span class="p">);</span>
+
+        <span class="n">_totalSupply</span> <span class="o">-=</span> <span class="n">_amount</span><span class="p">;</span>
+        <span class="n">_balances</span><span class="p">[</span><span class="n">_fromAccount</span><span class="p">]</span> <span class="o">-=</span> <span class="n">_amount</span><span class="p">;</span>
+        <span class="n">emit</span> <span class="n">Transfer</span><span class="p">(</span><span class="n">_fromAccount</span><span class="p">,</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">_amount</span><span class="p">);</span>
+   <span class="p">}</span>
+
+   <span class="n">function</span> <span class="n">increaseAllowance</span><span class="p">(</span><span class="n">address</span> <span class="n">spender</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">addedValue</span><span class="p">)</span> <span class="n">public</span> <span class="n">returns</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_approve</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">spender</span><span class="p">,</span> <span class="n">_allowances</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">][</span><span class="n">spender</span><span class="p">]</span> <span class="o">+</span> <span class="n">addedValue</span><span class="p">);</span>
+       <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+   <span class="p">}</span>
+
+       <span class="n">function</span> <span class="n">decreaseAllowance</span><span class="p">(</span><span class="n">address</span> <span class="n">spender</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">addedValue</span><span class="p">)</span> <span class="n">public</span> <span class="n">returns</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">_approve</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">spender</span><span class="p">,</span> <span class="n">_allowances</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">][</span><span class="n">spender</span><span class="p">]</span> <span class="o">-</span> <span class="n">addedValue</span><span class="p">);</span>
+       <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="utility-token-implementation">
+<h2>Utility Token implementation<a class="headerlink" href="#utility-token-implementation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">SPDX</span><span class="o">-</span><span class="n">License</span><span class="o">-</span><span class="n">Identifier</span><span class="p">:</span> <span class="n">MIT</span>
+
+<span class="n">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.8</span><span class="o">.</span><span class="mi">0</span><span class="p">;</span>
+
+
+<span class="kn">import</span> <span class="s2">&quot;./StandardERC20.sol&quot;</span><span class="p">;</span>
+<span class="kn">import</span> <span class="s2">&quot;https://github.com/OpenZeppelin/openzeppelin-contracts/blob/9425a7e0ab1d45c48845d47afc33856ad9d98b0c/contracts/access/Ownable.sol&quot;</span><span class="p">;</span>
+
+
+<span class="n">contract</span> <span class="n">GreenToken</span> <span class="ow">is</span> <span class="n">StandardERC20</span><span class="p">,</span> <span class="n">Ownable</span> <span class="p">{</span>
+
+
+    <span class="n">mapping</span><span class="p">(</span><span class="n">address</span><span class="o">=&gt;</span><span class="n">address</span><span class="p">)</span> <span class="n">public</span> <span class="n">meterToOwner</span><span class="p">;</span> <span class="o">//</span> <span class="n">Map</span> <span class="n">address</span> <span class="n">of</span> <span class="n">meter</span> <span class="n">to</span> <span class="n">the</span> <span class="n">meter</span> <span class="n">owner</span> <span class="n">wallet</span>
+    <span class="n">mapping</span><span class="p">(</span><span class="n">address</span><span class="o">=&gt;</span><span class="n">address</span><span class="p">[])</span> <span class="n">public</span> <span class="n">ownerToMeter</span><span class="p">;</span> <span class="o">//</span> <span class="n">Map</span> <span class="n">address</span> <span class="n">of</span> <span class="n">owner</span> <span class="n">wallet</span> <span class="n">to</span> <span class="n">the</span> <span class="n">meter</span>
+
+    <span class="n">address</span><span class="p">[]</span> <span class="n">public</span> <span class="n">meters</span><span class="p">;</span>
+
+    <span class="n">constructor</span> <span class="p">()</span> <span class="n">StandardERC20</span><span class="p">(</span><span class="s2">&quot;Green&quot;</span><span class="p">,</span><span class="s2">&quot;JOY&quot;</span><span class="p">,</span><span class="mi">10000</span><span class="p">){</span>
+
+    <span class="p">}</span>
+
+
+    <span class="n">event</span> <span class="n">Burn</span><span class="p">(</span><span class="n">address</span> <span class="n">indexed</span> <span class="n">burner</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">value</span><span class="p">);</span> <span class="o">//</span> <span class="n">Burn</span> <span class="n">tokens</span> <span class="n">based</span> <span class="n">on</span> <span class="n">power</span> <span class="n">consumption</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">meters</span> <span class="n">wallet</span>
+    <span class="n">event</span> <span class="n">Mint</span><span class="p">(</span><span class="n">address</span> <span class="n">indexed</span> <span class="n">to</span><span class="p">,</span> <span class="n">uint256</span> <span class="n">amount</span><span class="p">);</span> <span class="o">//</span> <span class="n">Mint</span> <span class="n">tokens</span> <span class="n">based</span> <span class="n">on</span> <span class="n">power</span> <span class="n">production</span> <span class="n">to</span> <span class="n">the</span> <span class="n">meters</span> <span class="n">wallet</span>
+
+
+    <span class="n">modifier</span> <span class="n">hasMintPermission</span><span class="p">()</span> <span class="p">{</span> <span class="o">//</span> <span class="n">Requires</span> <span class="n">that</span> <span class="n">only</span> <span class="n">the</span> <span class="n">meter</span> <span class="n">address</span> <span class="n">can</span> <span class="n">call</span> <span class="n">the</span> <span class="n">mint</span> <span class="n">function</span> <span class="n">based</span> <span class="n">on</span> <span class="n">production</span>
+        <span class="n">require</span><span class="p">(</span><span class="n">meterToOwner</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">]</span> <span class="o">!=</span> <span class="n">address</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">||</span> <span class="n">msg</span><span class="o">.</span><span class="n">sender</span> <span class="o">==</span> <span class="n">owner</span><span class="p">());</span>
+        <span class="n">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">modifier</span> <span class="n">onlyMeterOwner</span><span class="p">(</span><span class="n">address</span> <span class="n">_meterAddress</span><span class="p">){</span>
+        <span class="n">require</span><span class="p">(</span><span class="n">meterToOwner</span><span class="p">[</span><span class="n">_meterAddress</span><span class="p">]</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">);</span>
+        <span class="n">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">enrollMeter</span><span class="p">(</span><span class="n">address</span> <span class="n">_meterAddress</span><span class="p">,</span> <span class="n">address</span> <span class="n">_ownerAddress</span><span class="p">)</span> <span class="n">onlyOwner</span> <span class="n">public</span> <span class="p">{</span>
+        <span class="n">meterToOwner</span><span class="p">[</span><span class="n">_meterAddress</span><span class="p">]</span> <span class="o">=</span> <span class="n">_ownerAddress</span><span class="p">;</span> <span class="o">//</span> <span class="n">Bind</span> <span class="n">meter</span> <span class="n">to</span> <span class="n">owner</span>
+        <span class="n">ownerToMeter</span><span class="p">[</span><span class="n">_ownerAddress</span><span class="p">]</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">_meterAddress</span><span class="p">);</span> <span class="o">//</span> <span class="n">Bind</span> <span class="n">owner</span> <span class="n">to</span> <span class="n">meter</span>
+        <span class="n">meters</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">_meterAddress</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">transferMeterOwnership</span><span class="p">(</span><span class="n">address</span> <span class="n">_meterAddress</span><span class="p">,</span> <span class="n">address</span> <span class="n">_newOwnerAddress</span><span class="p">)</span> <span class="n">onlyMeterOwner</span><span class="p">(</span><span class="n">_meterAddress</span><span class="p">)</span> <span class="n">public</span> <span class="p">{</span>
+        <span class="n">meterToOwner</span><span class="p">[</span><span class="n">_meterAddress</span><span class="p">]</span> <span class="o">=</span> <span class="n">_newOwnerAddress</span><span class="p">;</span>
+        <span class="n">ownerToMeter</span><span class="p">[</span><span class="n">_newOwnerAddress</span><span class="p">]</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">_meterAddress</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">burn</span><span class="p">(</span><span class="n">uint256</span> <span class="n">_value</span><span class="p">)</span> <span class="n">public</span>  <span class="p">{</span> <span class="o">//</span> <span class="n">Burn</span> <span class="n">tokens</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">meter</span><span class="s1">&#39;s own wallet [msg.sender]</span>
+        <span class="nb">super</span><span class="o">.</span><span class="n">burn</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">_value</span><span class="p">);</span>
+        <span class="n">emit</span> <span class="n">Burn</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span><span class="n">_value</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">mint</span><span class="p">(</span><span class="n">uint256</span> <span class="n">_amount</span><span class="p">)</span> <span class="n">public</span>  <span class="n">hasMintPermission</span> <span class="n">returns</span> <span class="p">(</span><span class="nb">bool</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">super</span><span class="o">.</span><span class="n">mint</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span><span class="n">_amount</span><span class="p">);</span>
+        <span class="n">increaseAllowance</span><span class="p">(</span><span class="n">meterToOwner</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">],</span> <span class="n">_amount</span><span class="p">);</span>
+        <span class="n">emit</span> <span class="n">Mint</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">_amount</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">mintTo</span><span class="p">(</span><span class="n">uint256</span> <span class="n">_amount</span><span class="p">,</span> <span class="n">address</span> <span class="n">_recipient</span><span class="p">)</span><span class="n">public</span> <span class="n">onlyOwner</span> <span class="n">returns</span> <span class="p">(</span><span class="nb">bool</span><span class="p">){</span>
+        <span class="n">increaseAllowance</span><span class="p">(</span><span class="n">meterToOwner</span><span class="p">[</span><span class="n">_recipient</span><span class="p">],</span> <span class="n">_amount</span><span class="p">);</span>
+        <span class="n">emit</span> <span class="n">Mint</span><span class="p">(</span><span class="n">_recipient</span><span class="p">,</span> <span class="n">_amount</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">getAllMeters</span><span class="p">()</span> <span class="n">public</span> <span class="n">view</span> <span class="n">returns</span><span class="p">(</span><span class="n">address</span><span class="p">[]</span> <span class="n">memory</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">meters</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">function</span> <span class="n">getAllMetersForOwner</span><span class="p">(</span><span class="n">address</span> <span class="n">_owner</span><span class="p">)</span><span class="n">public</span> <span class="n">view</span> <span class="n">returns</span> <span class="p">(</span><span class="n">address</span><span class="p">[]</span> <span class="n">memory</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">ownerToMeter</span><span class="p">[</span><span class="n">_owner</span><span class="p">];</span>
+    <span class="p">}</span>
+
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../tokenomics/index.html" title="previous page">Tokenomics</a>
+    <a class='right-next' id="next-link" href="../ui/index.html" title="next page">UI-Screenflow</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Team Osive.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.0+.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microgrids &#8212; Greens Project  documentation</title>
+    
+  <link rel="stylesheet" href="../../../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Datacenter" href="../datacenter/index.html" />
+    <link rel="prev" title="Core Domain Concepts" href="../index.html" />
+
+<!-- VUE -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Vuetify -->
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script>
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../../../index.html">
+    
+      <p class="title">Greens Project</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../theBasis/index.html">The Basis</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../introduction/index.html">The Problem Statement & Solution</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../crux/index.html">The Crux</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../end/index.html">The End</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../../index.html">Appendix</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../references/index.html">Links & References</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../../team/index.html">Team Profile</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="microgrids">
+<h1>Microgrids<a class="headerlink" href="#microgrids" title="Permalink to this headline">¶</a></h1>
+<img alt="../../../../_images/blankspace4.png" class="align-center" src="../../../../_images/blankspace4.png" />
+<p><strong>What is a microgrid?</strong></p>
+<p>A microgrid is a local, interconnected energy system within clearly defined electrical boundaries that :</p>
+<ul class="simple">
+<li><p>incorporates loads and decentralized energy resources, including storage,</p></li>
+<li><p>multiple energy sources or electrical-only,</p></li>
+<li><p>grid-connected or off-grid mode,</p></li>
+<li><p>a single entity with its own independent control in both modes,</p></li>
+<li><p>power range from several kW to multiple MW, voltage range up to MV.</p></li>
+</ul>
+<p>In the early 20th century, the centralization of electricity production made huge progress, enabling significant economies of scale and improved power plant efficiency. The 21th century is encountering new challenges that decentralized solutions such as microgrids could help to tackle.
+Microgrids enable an optimized way to access reliable, green, and resilient energy through a local, interconnected energy system within clearly defined electrical boundaries, which incorporate loads, decentralized energy resources, battery storage, and control capabilities.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../../../_images/microgrid.png"><img alt="../../../../_images/microgrid.png" src="../../../../_images/microgrid.png" style="width: 908.75px; height: 510.75px;" /></a>
+<p class="caption"><span class="caption-text">Achieve energy resilience, reduce energy costs and maximize assets lifetime</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>A microgrid brings in self-sustainable system, consisting of interconnected distributed energy resources and loads undera common control scheme that can operate in an independent mode during grid failures.Energy resources may be renewables like solar and wind, diesel generators, gas turbines, battery storage, electric vehicles and/or demand/response.Microgrids may serve applications ranging from industrial and commercial, campus/institutional, communities to military installations, in an autonomous or grid-connected manner.</p>
+<p>Energy decentralization is a major development that could help tackle the energy challenges of the 21st century. Major technical and economic changes continue to occur. There is substantial progress regarding decentralized energy resources, such as solar energy and battery storage. IoT is also operational–driving new cooperation and optimization capabilities. Microgrids are one answer to this energy transition situation and their benefits encompass energy reliability, energy accessibility, independence through renewable generation, and energy cost optimization.</p>
+<p>References -</p>
+<ul class="simple">
+<li><p>Ref 1 : <a class="reference external" href="https://new.abb.com/low-voltage/solutions/smart-power-solutions-for-microgrids">https://new.abb.com/low-voltage/solutions/smart-power-solutions-for-microgrids</a></p></li>
+<li><p>Ref 2 : <a class="reference external" href="https://www.keppledesign.com/infographic/eedngapvcwc3mt5raa1jbb9njgupv4">https://www.keppledesign.com/infographic/eedngapvcwc3mt5raa1jbb9njgupv4</a></p></li>
+<li><p>Ref 3 : <a class="reference external" href="https://www.inaccess.com/microgrid/">https://www.inaccess.com/microgrid/</a></p></li>
+</ul>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">Core Domain Concepts</a>
+    <a class='right-next' id="next-link" href="../datacenter/index.html" title="next page">Datacenter</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Team Osive.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.0+.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
