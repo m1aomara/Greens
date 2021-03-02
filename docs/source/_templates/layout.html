@@ -1,0 +1,26 @@
+{% extends "!layout.html" %}
+
+{%- block extrahead %}
+
+<!-- VUE -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Vuetify -->
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script>
+
+
+{% endblock %}
+
+
+{% block footer %} {{ super() }}
+
+{% endblock %}
