@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Today's Production",
+    "sales": [423, 446, 675, 510, 590, 610, 760, 639],
+    "color": "cyan",
+    "labels": ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm"]
+  },
+  {
+    "title": "Production This Month ",
+    "sales": [325, 123, 273, 573],
+    "color": "teal",
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4"]
+  },
+  {
+    "title": "Production of Year",
+    "sales": [746, 415, 943, 1372, 983, 651, 837, 639],
+    "color": "green",
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"]
+  }
+]
