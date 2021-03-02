@@ -1,5 +1,5 @@
 # Aliyda : Context & Basis
-[Aliyda](https://aliyda.osive.com/)
+[Aliyda](https://greens.osive.com/index.html)
 
 Core systems, which form the foundations of all societies, are broken. We cannot mend them by just being one-dimensional in our approach.
 
@@ -18,20 +18,4 @@ It can only be achieved if we can connect the dots. Dots that join, domains like
 ![Key stakeholders in the usecase](https://aliyda.osive.com/_images/stakeholders1.png)
 
 # 
-Tentative Smart Contracts
-
-    PublishInfo: A function that lets the actors of the system store and update their information in the blockchain.
-
-    GetInfo: A function that lets other agents read the information published by a given agent.
-
-    MakeOffer: A function that puts a producer’s energy blocks on sale.
-
-    AllocateEnergy: A function that allocates an amount of the producer’s energy to a given consumer for a given price.
-
-    AllowTransaction: A function that puts the given amount of virtualized fiduciary money in the smart contract.
-
-    MakeTransaction: Once the system has detected that the purchased amount of energy has been transacted, the smart contract gives the virtualized fiduciary money from the consumer to the producer.
-
-    MintWatts: Approved actors can mint watts in order to virtualize the quantity of energy producers have stored. Producers ask for the mint of watts every 15 minutes and if they have stored a enough watts to make profitable their virtualization on the blockchain.
-
 
