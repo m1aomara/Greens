@@ -60,5 +60,11 @@ export default {
       ],
     };
   },
+  mounted () {
+    if (this.$session === undefined )
+    {
+      this.$router.push('/login');
+    }
+  },
 };
 </script>
